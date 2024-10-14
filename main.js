@@ -4,17 +4,20 @@ function itchio() {
 function github() {
   window.location.href = "https://github.com/BlooshedDev";
 }
-setInterval(function () {}, 10);
 
-window.addEventListener("scroll", (event) => {
-  let scroll = this.scrollY;
-  let height = window.innerHeight;
-  let scrollPercent = Math.round((scroll / height) * 365);
-  console.log(scroll, height, scrollPercent);
+let proccessScroll = () => {
+  let docElement = document.documentElement;
+  let docBody = document.body;
+  let scrollTop = docElement.scrollTop || docBody.scrollTop;
+  let scrollBottom =
+    (docElement.scrollHeight || docBody.scrollHeight) - window.innerHeight;
+  let scrollPercent = (scrollTop / scrollBottom) * 360;
+  console.log(scrollPercent);
 
   const logo = document.querySelector(".logo");
   logo.style.transform = `rotate(${scrollPercent}deg)`;
-});
+};
+document.addEventListener("scroll", proccessScroll);
 
 function showSidebar() {
   const sidebar = document.querySelector(".sidebar");

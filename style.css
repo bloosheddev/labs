@@ -1,18 +1,19 @@
 @font-face {
   font-family: Geist;
-  src: url('/assets/fonts/geist/Geist-Regular.woff2');
-} 
+  src: url("/assets/fonts/geist/Geist-Regular.woff2");
+}
 
-*, html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body * {
-  font-family: 'Geist';
+  font-family: "Geist";
   font-weight: 550;
 }
-
 
 @media only screen and (max-width: 635px) {
   .button-area {
@@ -67,7 +68,7 @@ body * {
     display: flex;
     flex-direction: column;
   }
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: column;
   }
@@ -112,8 +113,6 @@ body * {
   }
 }
 
-
-
 @media only screen and (min-width: 636px) {
   .my {
     display: flex;
@@ -141,17 +140,6 @@ body * {
     transform: rotate(-0.5deg);
   }
   /* ------------------------------PROJECT--------------------- */
-  .project-title {
-    margin-top: auto;
-    font-size: 7.5vmin;
-    color: #ffff;
-    /* transform: rotate(-7.5deg); */
-    margin-bottom: 3vh;
-    text-align: center;
-  }
-  .button-area {
-    margin-top: 2vh;
-  }
   .placehold {
     margin: auto;
     /* width: 400px; */
@@ -175,21 +163,16 @@ body * {
     border-radius: 65px 65px 0 0;
     padding-top: 100px;
   }
-  .pr-name {
-    color: #000000;
-    font-size: xx-large;
-    text-align: center;
-  }
-  .test1 {
+  .project-card {
     width: 650px;
     height: 450px;
     border-radius: 60px;
-    background: #5e8cf0;
+    background: #7a9cf8;
     padding: 20px;
     display: flex;
     flex-direction: row;
   }
-  .placehold1 {
+  .project-card-img {
     object-fit: cover;
     width: 230px;
     height: 410px;
@@ -197,7 +180,27 @@ body * {
     margin-right: 30px;
   }
   .card-title {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .card-desc {
+    height: 280px;
+  }
+  .project-btn {
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 100px;
+    background-color: #000000;
+    color: #7a9cf8;
+    cursor: pointer;
+    margin-top: auto;
+  }
+  .project-btn:hover {
+    transition: box-shadow 0.2s ease, color 0.2s ease, background 0.2s ease;
+    border: none;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px #000000 inset;
+    color: #000000;
   }
 }
