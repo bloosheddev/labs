@@ -1,119 +1,29 @@
 .logo {
-  transition: transform .1s;
+  transition: transform 0.1s;
 }
 
 @media only screen and (min-width: 636px) {
-  header {
-    background-color: #009dffb0;
-    overflow: hidden;
-    color: #eaeaea;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 0px 30px #009eff;
-    z-index: 10000;
-    border-radius: 15px;
-    margin: 12.5px;
-    backdrop-filter: blur(10px);
-  }
-  .logo {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-  }
   .logo {
     margin-left: 0;
     display: flex;
     width: 80px;
     height: 80px;
+
+    position: fixed;
+    top: 5px;
+    left: 5px;
   }
-  .blue {
-    display: none;
-    width: 80px;
-    height: 80px;
-  }
-  nav ul{
-    display: flex;
-  }
-  nav{
-    margin: auto;
-  }
-  li {
-    list-style-type: none;
-    padding: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  a {
-      color: #ffff;
-      text-decoration: none;
-  }
-  .menu-icon {
-    display: none;
-  }
-}
-.logo {
-  transition: transform .5s;
 }
 
 @media only screen and (max-width: 635px) {
-  header {
-    /* background-color: #009dff; */
-    top: 0;
-    overflow: hidden;
-    color: #eaeaea;
-    display: flex;
-    z-index: 10000;
-    align-items: center;
-    /* box-shadow: 0px 0px 30px #009dff; */
-  }
-  a {
-    color: #ffff;
-    text-decoration: none;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  li {
-    list-style-type: none;
-    padding: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .logo {
-    display: none;
-  }
-  .blue {
-    display: none;
-  }
-  .hideOnMobile {
-    display: none;
-  } /* Hide The Menu-------- */
-  .menu-icon {
-    background: #009dff6e;
-    border-radius: 10px;
-    z-index: 1001;
-    backdrop-filter: blur(10px);
-  }
-  nav {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 0;
     display: flex;
-  }
-  .sidebar {
-    margin-left: 20px;
-    margin-top: 10px;
-    z-index: 1000;
-    width: 50vw;
-    height: 50vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px #7eb3d4;
+    width: 80px;
+    height: 80px;
+
     position: fixed;
-    top: 85px;
-    left: 0;
-    background-color: #ade8ffb4;
-    backdrop-filter: blur(10px);
-    z-index: 10000;
+    top: 10px;
+    left: 10px;
   }
 }
