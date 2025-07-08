@@ -5,25 +5,16 @@ function github() {
   window.location.href = "https://github.com/BlooshedDev";
 }
 
-let proccessScroll = () => {
-  let docElement = document.documentElement;
-  let docBody = document.body;
-  let scrollTop = docElement.scrollTop || docBody.scrollTop;
-  let scrollBottom =
-    (docElement.scrollHeight || docBody.scrollHeight) - window.innerHeight;
-  let scrollPercent = (scrollTop / scrollBottom) * 360;
-  console.log(scrollPercent);
+// let proccessScroll = () => {
+//   let docElement = document.documentElement;
+//   let docBody = document.body;
+//   let scrollTop = docElement.scrollTop || docBody.scrollTop;
+//   let scrollBottom =
+//     (docElement.scrollHeight || docBody.scrollHeight) - window.innerHeight;
+//   let scrollPercent = (scrollTop / scrollBottom) * 360;
+//   console.log(scrollPercent);
 
-  const logo = document.querySelector(".logo");
-  logo.style.transform = `rotate(${scrollPercent}deg)`;
-};
-document.addEventListener("scroll", proccessScroll);
-
-function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  if (sidebar.style.display == "none") {
-    sidebar.style.display = "flex";
-  } else {
-    sidebar.style.display = "none";
-  }
-}
+//   const logo = document.querySelector(".logo");
+//   logo.style.transform = `rotate(${scrollPercent}deg)`;
+// };
+// document.addEventListener("scroll", proccessScroll);
