@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Geist;
+  src: url("/assets/fonts/geist/Geist-Regular.woff2");
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body * {
+  font-family: "Pixelify Sans";
+  font-weight: 550;
+}
+li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .my {
+    display: flex;
+    width: 25vh;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    width: 100%;
+  }
+  .intro-bg {
+    position: fixed;
+    object-fit: cover;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+  }
+  .h1-intro {
+    margin-top: 7vh;
+    font-size: 6.5vmin;
+    color: #a5a5a5;
+    transform: rotate(-0.5deg);
+  }
+  /* ------------------------------PROJECT--------------------- */
+  .placehold {
+    margin: auto;
+    /* width: 400px; */
+    border-radius: 60px;
+    background: #e4f7ff;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 0fr));
+    /* grid-template-columns: 400px; */
+    grid-gap: 10px;
+    margin: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+  .project {
+    background-color: #f3f5f8;
+    border-radius: 65px 65px 0 0;
+    padding-top: 50px;
+  }
+  .project-card {
+    width: 390px;
+    height: 200px;
+    background: #e5e5e6;
+    display: flex;
+    flex-direction: row;
+  }
+  .project-card-img {
+    object-fit: cover;
+    width: 150px;
+    height: 200px;
+  }
+  .card-title {
+    height: 40px;
+    width: 240px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+  }
+  .card-desc {
+    height: 110px;
+    font-size: 15px;
+    padding: 10px;
+    width: 240px;
+  }
+  .project-btn {
+    font-size: 15x;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 1px #a5a5a5 inset;
+    color: #3a3a3a;
+    cursor: pointer;
+    margin-top: auto;
+
+    padding: 15.5px;
+    display: block;
+    text-align: center;
+  }
+  .project-btn:hover {
+    transition: box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
+    border: none;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px #000000 inset;
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 721px) {
+  .my {
+    display: flex;
+    width: 30vh;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    width: 100%;
+  }
+  .intro-bg {
+    position: fixed;
+    object-fit: cover;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+  }
+  .h1-intro {
+    margin-top: 7vh;
+    font-size: 5vmin;
+    color: #a5a5a5;
+    transform: rotate(-0.5deg);
+  }
+  /* ------------------------------PROJECT--------------------- */
+  .placehold {
+    margin: auto;
+    /* width: 400px; */
+    background: #e4f7ff;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 0fr));
+    /* grid-template-columns: 400px; */
+    grid-gap: 45px;
+    margin: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+  .project {
+    background-color: #f3f5f8;
+    padding-top: 100px;
+  }
+  .project-card {
+    width: 650px;
+    height: 450px;
+    background: #e5e5e6;
+    display: flex;
+    flex-direction: row;
+  }
+  .project-card-img {
+    object-fit: cover;
+    width: 270px;
+    height: 450px;
+  }
+  .card-title {
+    font-size: 50px;
+    width: 380px;
+    font-weight: 500;
+    padding: 20px;
+  }
+  .card-desc {
+    height: 286px;
+    width: 380px;
+    padding: 20px;
+  }
+  .project-btn {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    display: block;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 1px #a5a5a5 inset;
+    color: #3a3a3a;
+    cursor: pointer;
+    margin-top: auto;
+    text-align: center;
+  }
+  .project-btn:hover {
+    transition: box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
+    border: none;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px #000000 inset;
+    color: #000000;
+  }
+}
